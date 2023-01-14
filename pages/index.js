@@ -106,7 +106,7 @@ export default function Home() {
               >
                 Tadpole
               </a>{" "}
-              📚, led a weekly lab as a teaching assistant at{" "}
+              📚, leads a weekly lab as a teaching assistant at{" "}
               <a
                 href="https://www.khoury.northeastern.edu/"
                 target="_blank"
@@ -122,7 +122,7 @@ export default function Home() {
               >
                 SPC
               </a>{" "}
-              💼, mentors students and writes web development explainers at{" "}
+              💼, mentors students and crafts web dev resources at{" "}
               <a
                 href="https://www.oasisneu.com"
                 target="_blank"
@@ -130,7 +130,7 @@ export default function Home() {
               >
                 Oasis
               </a>{" "}
-              🌴, and crafts engaging multi-disciplinary events at{" "}
+              🌴, and organizes engaging multi-disciplinary events at{" "}
               <a
                 href="https://tedxnortheasternu.com"
                 target="_blank"
@@ -173,34 +173,6 @@ export default function Home() {
       <ExperienceSection>
         <Experiences />
       </ExperienceSection>
-
-      {/* <ExperienceSection>
-        <Carousel>
-          <CarouselItem>
-            <Card>
-              <CardHeader accentColor="#52b09e">
-                <Image
-                  src={tadpoleIllustration}
-                  alt="Illustration"
-                  draggable={false}
-                />
-              </CardHeader>
-
-              <CardContent>
-                <WorkRole>
-                  TEDxNU <span>&mdash; Director of Operations</span>
-                </WorkRole>
-
-                <WorkDescription>
-                  Engineered front- and back-end systems in support of September
-                  2022 launch for 300+ users across 3 Boston-based educational
-                  organizations.
-                </WorkDescription>
-              </CardContent>
-            </Card>
-          </CarouselItem>
-        </Carousel>
-      </ExperienceSection> */}
     </>
   );
 }
