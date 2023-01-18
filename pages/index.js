@@ -7,6 +7,7 @@ import Experiences from "../components/experiences";
 
 import photo from "../public/me.jpg";
 
+import oasisLogo from "../public/logos/oasis.svg";
 import kccsLogo from "../public/logos/kccs.svg";
 import spcLogo from "../public/logos/spc.svg";
 import tadpoleLogo from "../public/logos/tadpole.svg";
@@ -153,14 +154,20 @@ export default function Home() {
             </HighlightBlock>
 
             <LogosSection variants={logos}>
-              <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="25" />
-              <Image
-                src={kccsLogo}
-                alt="Khoury College of Computer Sciences"
-                height="25"
-              />
-              <Image src={spcLogo} alt="SPC Financial" height="25" />
-              <Image src={tedxnuLogo} alt="TEDxNU" height="25" />
+              <LogosRow>
+                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="25" />
+                <Image
+                  src={kccsLogo}
+                  alt="Khoury College of Computer Sciences"
+                  height="25"
+                />
+                <Image src={spcLogo} alt="SPC Financial" height="25" />
+              </LogosRow>
+
+              <LogosRow>
+                <Image src={oasisLogo} alt="Oasis" height="25" />
+                <Image src={tedxnuLogo} alt="TEDxNU" height="25" />
+              </LogosRow>
             </LogosSection>
           </HeroRight>
         </HeroSectionGrid>
@@ -301,13 +308,21 @@ const HighlightBlock = styled(motion.p, {
 
 const LogosSection = styled(motion.div, {
   display: "flex",
-  flexDirection: "row",
+  flexDirection: "column",
   justifyContent: "center",
   flexWrap: "wrap",
   gap: "2rem",
   width: "100%",
   marginTop: "3.5rem",
   overflow: "auto",
+});
+
+const LogosRow = styled("div", {
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+  flexWrap: "wrap",
+  gap: "2rem",
 });
 
 const SectionTitle = styled("div", {
@@ -336,19 +351,3 @@ const ExperienceSection = styled(motion.div, {
     paddingY: "3.5rem",
   },
 });
-
-// const WorkRole = styled("h3", {
-//   fontSize: "clamp(1.3rem, 3vw, 1.8rem)",
-//   fontWeight: "700",
-
-//   span: {
-//     fontWeight: "100",
-//   },
-// });
-
-// const WorkDescription = styled("p", {
-//   marginTop: "1rem",
-//   fontSize: "clamp(1.02rem, 2vw, 1.1rem)",
-//   fontWeight: "300",
-//   lineHeight: "24px",
-// });
