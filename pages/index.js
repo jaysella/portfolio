@@ -89,7 +89,7 @@ export default function Home() {
 
           <HeroRight initial="hidden" animate="visible" variants={heroBlocks}>
             <Intro variants={heroBlock}>
-              Full-Stack Developer with a passion for leveraging technology to
+              Full-stack developer with a passion for leveraging technology to
               enhance experiences.
             </Intro>
 

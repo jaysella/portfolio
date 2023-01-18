@@ -3,7 +3,7 @@ import Experience from "./experience";
 import crIllustration from "../public/illustrations/cr.svg";
 import kccsIllustration from "../public/illustrations/kccs.svg";
 import mbaIllustration from "../public/illustrations/mba.svg";
-// import oasisIllustration from "../public/illustrations/oasis.svg";
+import oasisIllustration from "../public/illustrations/oasis.svg";
 import spcIllustration from "../public/illustrations/spc.svg";
 import tadpoleIllustration from "../public/illustrations/tadpole.svg";
 
@@ -12,15 +12,15 @@ import { styled } from "../stitches.config";
 export default function Experiences() {
   return (
     <Wrapper>
-      {/* <Experience
+      <Experience
         accentColor="#F2D16B"
         project="Oasis"
-        description=""
+        description="Crafted full-stack web development resources, including a workshop and sample projects, while also mentoring student groups to build a project over eight weeks."
         role="Mentor"
         location="Boston, MA"
         dates="Jan ‘23 – Present"
         illustration={oasisIllustration}
-      /> */}
+      />
 
       <Experience
         accentColor="#C8102E"
@@ -38,7 +38,7 @@ export default function Experiences() {
         description="Engineered front- and back-end systems in support of September 2022
         launch for 300+ users across 3 Boston-based educational
         organizations."
-        role="Product Manager + Full-Stack Developer"
+        role="Product Manager + Lead Developer"
         location="Remote / Boston, MA"
         dates="June ‘22 – Present"
         illustration={tadpoleIllustration}
