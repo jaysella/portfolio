@@ -155,18 +155,18 @@ export default function Home() {
 
             <LogosSection variants={logos}>
               <LogosRow>
-                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="25" />
+                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="30" />
                 <Image
                   src={kccsLogo}
                   alt="Khoury College of Computer Sciences"
-                  height="25"
+                  height="30"
                 />
-                <Image src={spcLogo} alt="SPC Financial" height="25" />
+                <Image src={spcLogo} alt="SPC Financial" height="30" />
               </LogosRow>
 
               <LogosRow>
-                <Image src={oasisLogo} alt="Oasis" height="25" />
-                <Image src={tedxnuLogo} alt="TEDxNU" height="25" />
+                <Image src={oasisLogo} alt="Oasis" height="30" />
+                <Image src={tedxnuLogo} alt="TEDxNU" height="30" />
               </LogosRow>
             </LogosSection>
           </HeroRight>
@@ -311,9 +311,9 @@ const LogosSection = styled(motion.div, {
   flexDirection: "column",
   justifyContent: "center",
   flexWrap: "wrap",
-  gap: "2rem",
+  gap: "2.25rem",
   width: "100%",
-  marginTop: "3.5rem",
+  marginTop: "3rem",
   overflow: "auto",
 });
 
