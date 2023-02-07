@@ -38,7 +38,7 @@ export default function Experiences() {
         description="Engineered front- and back-end systems in support of September 2022
         launch for 300+ users across 3 Boston-based educational
         organizations."
-        role="Product Manager + Lead Developer"
+        role="Lead Software Engineer + Product Manager"
         location="Remote / Boston, MA"
         dates="June ‘22 – Present"
         illustration={tadpoleIllustration}
@@ -48,9 +48,9 @@ export default function Experiences() {
         accentColor="#1e4388"
         project="SPC Financial"
         description="Overhauled internal systems + processes, improving case resolution time by 91% and saving 15 hours + $1k annually by digitizing annual billing."
-        role="Salesforce Administrator"
-        location="Rockville, MD"
-        dates="March ‘16 – Present"
+        role="Salesforce Administrator/Developer + Digital Solutions Architect"
+        location="Remote / Rockville, MD"
+        dates="June ‘19 – Present"
         illustration={spcIllustration}
       />
 
