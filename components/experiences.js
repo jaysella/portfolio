@@ -13,20 +13,10 @@ export default function Experiences() {
   return (
     <Wrapper>
       <Experience
-        accentColor="#F2D16B"
-        project="Oasis"
-        description="Crafted full-stack web development resources, including a workshop and sample projects, while also mentoring student groups to build a project over eight weeks."
-        role="Mentor"
-        location="Boston, MA"
-        dates="Jan ‘23 – Present"
-        illustration={oasisIllustration}
-      />
-
-      <Experience
         accentColor="#C8102E"
         project="Khoury College of Computer Sciences"
-        description="Led weekly lab, hosted routine office hours, and evaluated student homework, lab, and exam submissions from 40+ students each week. Courses: CS 2500 and CS 2510."
-        role="Teaching Assistant"
+        description="Led weekly lab, hosted routine office hours, and evaluated student homework, lab, and exam submissions from 40+ students each week. Courses: CS 3500, CS 2510, and CS 2500."
+        role="Head Teaching Assistant"
         location="Boston, MA"
         dates="Sep ‘22 – Present"
         illustration={kccsIllustration}
@@ -40,7 +30,7 @@ export default function Experiences() {
         organizations."
         role="Lead Software Engineer + Product Manager"
         location="Remote / Boston, MA"
-        dates="June ‘22 – Present"
+        dates="June ‘22 – Apr ‘23"
         illustration={tadpoleIllustration}
       />
 
@@ -52,6 +42,16 @@ export default function Experiences() {
         location="Remote / Rockville, MD"
         dates="June ‘19 – Present"
         illustration={spcIllustration}
+      />
+
+      <Experience
+        accentColor="#F2D16B"
+        project="Oasis"
+        description="Crafted full-stack web development resources, including a workshop and sample projects, while also mentoring student groups to build a project over eight weeks."
+        role="Mentor"
+        location="Boston, MA"
+        dates="Jan ‘23 – Apr ‘23"
+        illustration={oasisIllustration}
       />
 
       <Experience
