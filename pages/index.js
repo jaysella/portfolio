@@ -94,20 +94,13 @@ export default function Home() {
             </Intro>
 
             <motion.p variants={heroBlock}>
-              Jay is a second-year Computer Science + Business Admin student at
+              Jay is a rising third-year Computer Science + Business student at
               Northeastern University in Boston, MA.
             </motion.p>
 
             <motion.p variants={heroBlock}>
-              He oversees full-stack software development at{" "}
-              <a
-                href="https://tadpoletutoring.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tadpole
-              </a>{" "}
-              📚, leads a weekly lab as a teaching assistant at{" "}
+              He currently helps plan course curriculum + manage grading
+              processes for CS 3500 (Object-Oriented Design) at{" "}
               <a
                 href="https://www.khoury.northeastern.edu/"
                 target="_blank"
@@ -115,23 +108,8 @@ export default function Home() {
               >
                 Khoury
               </a>{" "}
-              🎓, manages business-critical Salesforce infrastructure at{" "}
-              <a
-                href="https://spcfinancial.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SPC
-              </a>{" "}
-              💼, mentors students and crafts web dev resources at{" "}
-              <a
-                href="https://www.oasisneu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Oasis
-              </a>{" "}
-              🌴, and organizes engaging multi-disciplinary events at{" "}
+              🎓. Jay also leads a team of 25+ to organize interactive,
+              multi-disciplinary events at{" "}
               <a
                 href="https://tedxnortheasternu.com"
                 target="_blank"
@@ -143,15 +121,39 @@ export default function Home() {
             </motion.p>
 
             <motion.p variants={heroBlock}>
+              Previously, he oversaw full-stack software development and product
+              management at{" "}
+              <a
+                href="https://tadpoletutoring.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tadpole
+              </a>{" "}
+              📚, mentored students and crafted web dev resources for{" "}
+              <a
+                href="https://www.oasisneu.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Oasis
+              </a>{" "}
+              🌴, and managed business-critical infrastructure at{" "}
+              <a
+                href="https://spcfinancial.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                SPC Financial
+              </a>{" "}
+              💼.
+            </motion.p>
+
+            <motion.p variants={heroBlock}>
               Jay is a conscientious collaborator, punctilious problem-solver,
               and tenacious tinkerer who embraces challenges and loves charting
               new territory.
             </motion.p>
-
-            <HighlightBlock variants={heroBlock}>
-              <b>Seeking:</b> internship/co-op &#183; <b>Available:</b>{" "}
-              July-December 2023
-            </HighlightBlock>
 
             <LogosSection variants={logos}>
               <LogosRow>
@@ -289,21 +291,6 @@ const Intro = styled(motion.h1, {
   fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
   fontWeight: "700",
   marginBottom: "2.5rem",
-});
-
-const HighlightBlock = styled(motion.p, {
-  padding: "0.5rem 1rem",
-  border: "1px solid $carrot",
-  borderRadius: "0.75rem 0.25rem 0.75rem 0.25rem",
-  textAlign: "center",
-
-  b: {
-    color: "$carrot",
-  },
-
-  "@md": {
-    textAlign: "left",
-  },
 });
 
 const LogosSection = styled(motion.div, {
