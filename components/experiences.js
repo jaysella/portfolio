@@ -30,7 +30,7 @@ export default function Experiences() {
         organizations."
         role="Lead Software Engineer + Product Manager"
         location="Remote / Boston, MA"
-        dates="June ‘22 – Apr ‘23"
+        dates="Jul ‘22 – Apr ‘23"
         illustration={tadpoleIllustration}
       />
 
@@ -40,7 +40,7 @@ export default function Experiences() {
         description="Overhauled internal systems + processes, improving case resolution time by 91% and saving 15 hours + $1k annually by digitizing annual billing."
         role="Salesforce Administrator/Developer + Digital Solutions Architect"
         location="Remote / Rockville, MD"
-        dates="June ‘19 – Present"
+        dates="Jun ‘19 – Present"
         illustration={spcIllustration}
       />
 

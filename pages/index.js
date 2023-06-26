@@ -95,12 +95,21 @@ export default function Home() {
 
             <motion.p variants={heroBlock}>
               Jay is a rising third-year Computer Science + Business student at
-              Northeastern University in Boston, MA.
+              Northeastern University in Boston, MA and an incoming Digital
+              Transformation and Technology Co-op at{" "}
+              <a
+                href="https://www.chick-fil-a.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chick-fil-A
+              </a>{" "}
+              🧑‍🍳.
             </motion.p>
 
             <motion.p variants={heroBlock}>
-              He currently helps plan course curriculum + manage grading
-              processes for CS 3500 (Object-Oriented Design) at{" "}
+              This summer, he planned course curriculum + managed grading
+              processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
               <a
                 href="https://www.khoury.northeastern.edu/"
                 target="_blank"
@@ -108,7 +117,7 @@ export default function Home() {
               >
                 Khoury
               </a>{" "}
-              🎓. Jay also leads a team of 25+ to organize interactive,
+              🎓. Jay also leads a team of 42 organizing interactive,
               multi-disciplinary events at{" "}
               <a
                 href="https://tedxnortheasternu.com"
