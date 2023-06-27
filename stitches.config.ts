@@ -14,10 +14,10 @@ export const {
     colors: {
       white: "#FFFFFF",
       cream: "#F6F5F1",
-      gray400: "gainsboro",
-      gray500: "lightgray",
+      gray: "#98A8B7",
       blue: "#021662",
       carrot: "#27B2C7",
+      yellowCream: "#F2D16B",
     },
     fonts: {
       handwriting:
@@ -25,8 +25,7 @@ export const {
     },
     fontWeights: {
       regular: "300",
-      semiBold: "600",
-      bold: "900",
+      bold: "700",
     },
   },
   media: {
@@ -49,11 +48,12 @@ export const globalStyles = globalCss({
   "html, body": {
     fontFamily:
       "'Figtree', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif",
+    fontSize: "16px",
+    fontWeight: 400,
   },
 
   body: {
     backgroundColor: "$cream",
-    fontSize: "12px",
   },
 
   "::-webkit-scrollbar": { width: "10px" },

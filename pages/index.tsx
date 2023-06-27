@@ -4,6 +4,9 @@ import Image from "next/image";
 
 import ExperienceTitle from "../components/experienceTitle";
 import Experiences from "../components/experiences";
+import ExperienceBlock from "../components/ExperienceBlock";
+
+import { EXPERIENCES, Experience } from "../data/experiences";
 
 import photo from "../public/me.jpg";
 
@@ -189,7 +192,10 @@ export default function Home() {
       </SectionTitle>
 
       <ExperienceSection>
-        <Experiences />
+        {EXPERIENCES.map((e: Experience) => (
+          <ExperienceBlock key={e.slug} experience={e} />
+        ))}
+        {/* <Experiences /> */}
       </ExperienceSection>
     </>
   );
@@ -337,7 +343,7 @@ const SectionTitle = styled("div", {
   },
 });
 
-const ExperienceSection = styled(motion.div, {
+const ExperienceSectionOld = styled(motion.div, {
   maxHeight: "min-content",
   marginX: "auto",
   paddingY: "1.5rem",
@@ -345,5 +351,19 @@ const ExperienceSection = styled(motion.div, {
 
   "@md": {
     paddingY: "3.5rem",
+  },
+});
+
+const ExperienceSection = styled(motion.section, {
+  display: "flex",
+  flexDirection: "column",
+  gap: "3rem",
+  maxHeight: "min-content",
+  marginX: "auto",
+  padding: "1.5rem",
+  color: "#E6F5FE",
+
+  "@md": {
+    padding: "3.5rem",
   },
 });
