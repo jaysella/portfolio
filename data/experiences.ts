@@ -13,9 +13,9 @@ export enum LocationType {
 export type Experience = {
   slug: string;
   company: string;
-  type: ExperienceType;
-  location: string;
-  locationType: LocationType;
+  type?: ExperienceType;
+  location?: string;
+  locationType?: LocationType;
   roles: Role[];
 };
 
@@ -26,6 +26,19 @@ export type Role = {
 };
 
 export const EXPERIENCES: Experience[] = [
+  // {
+  //   slug: "cfa",
+  //   company: "Chick-fil-A",
+  //   type: ExperienceType.PROFESSIONAL,
+  //   location: "Atlanta, GA",
+  //   locationType: LocationType.HYBRID,
+  //   roles: [
+  //     {
+  //       title: "Digital Transformation & Technology Co-Op",
+  //       startDate: new Date("Aug 2023"),
+  //     },
+  //   ],
+  // },
   {
     slug: "khoury",
     company: "Khoury College of Computer Sciences",
@@ -42,8 +55,45 @@ export const EXPERIENCES: Experience[] = [
         startDate: new Date("Jan 2023"),
         endDate: new Date("May 2023"),
       },
+      {
+        title: "Teaching Assistant, CS2500",
+        startDate: new Date("Sep 2022"),
+        endDate: new Date("Dec 2022"),
+      },
     ],
   },
+  {
+    slug: "tedxnu",
+    company: "TEDxNU",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Co-President",
+        startDate: new Date("May 2023"),
+      },
+      {
+        title: "Director of Operations",
+        startDate: new Date("Oct 2022"),
+        endDate: new Date("May 2023"),
+      },
+    ],
+  },
+  // {
+  //   slug: "oasis",
+  //   company: "Oasis",
+  //   type: ExperienceType.COMMUNITY,
+  //   location: "Boston, MA",
+  //   locationType: LocationType.ON_SITE,
+  //   roles: [
+  //     {
+  //       title: "Mentor",
+  //       startDate: new Date("Jan 2023"),
+  //       endDate: new Date("Apr 2023"),
+  //     },
+  //   ],
+  // },
   {
     slug: "tadpole",
     company: "Tadpole Tutoring",
@@ -73,10 +123,12 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Salesforce Administrator/Developer",
         startDate: new Date("Jan 2022"),
+        endDate: new Date("Mar 2023"),
       },
       {
         title: "Digital Solutions Architect",
         startDate: new Date("Jun 2019"),
+        endDate: new Date("Mar 2023"),
       },
       {
         title: "Marketing + Communications Intern",
@@ -86,47 +138,32 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    slug: "tedxnu",
-    company: "TEDxNU",
-    type: ExperienceType.COMMUNITY,
-    location: "Boston, MA",
-    locationType: LocationType.HYBRID,
+    slug: "miscellaneous",
+    company: "Miscellaneous",
     roles: [
       {
-        title: "Co-President",
-        startDate: new Date("May 2023"),
+        title: "BaySquared Consulting: Owner",
+        startDate: new Date("Dec 2021"),
       },
       {
-        title: "Director of Operations",
-        startDate: new Date("Oct 2022"),
-        endDate: new Date("May 2023"),
-      },
-    ],
-  },
-  {
-    slug: "oasis",
-    company: "Oasis",
-    type: ExperienceType.COMMUNITY,
-    location: "Boston, MA",
-    locationType: LocationType.ON_SITE,
-    roles: [
-      {
-        title: "Mentor",
+        title: "Oasis: Mentor",
         startDate: new Date("Jan 2023"),
         endDate: new Date("Apr 2023"),
       },
-    ],
-  },
-  {
-    slug: "baysquared",
-    company: "BaySquared Consulting",
-    type: ExperienceType.PROFESSIONAL,
-    location: "Maryland",
-    locationType: LocationType.HYBRID,
-    roles: [
       {
-        title: "Owner",
-        startDate: new Date("Dec 2021"),
+        title: "Middlesex Beach: Webmaster + Tech Consultant",
+        startDate: new Date("Jan 2017"),
+        endDate: new Date("Jan 2021"),
+      },
+      {
+        title: "SED Center: Classroom Assistant",
+        startDate: new Date("Sep 2019"),
+        endDate: new Date("Mar 2020"),
+      },
+      {
+        title: "Castello Ragazzi: Webmaster + Comms Officer",
+        startDate: new Date("Jan 2016"),
+        endDate: new Date("Jan 2018"),
       },
     ],
   },

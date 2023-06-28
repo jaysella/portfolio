@@ -1,4 +1,4 @@
-import { Experience } from "../data/experiences";
+import { Experience, ExperienceType } from "../data/experiences";
 import { styled } from "../stitches.config";
 
 import moment from "moment";
@@ -11,10 +11,14 @@ export default function ExperienceBlock({
   return (
     <Block>
       <BlockHeader>
-        <div>
-          {experience.location}
-          <span> &bull; {experience.type}</span>
-        </div>
+        {experience.location || experience.type ? (
+          <div>
+            {experience.location}
+            {experience.type !== ExperienceType.PROFESSIONAL && (
+              <span> &bull; {experience.type}</span>
+            )}
+          </div>
+        ) : null}
         <h3>{experience.company}</h3>
       </BlockHeader>
 
@@ -77,6 +81,17 @@ const BlockBody = styled("div", {
       alignItems: "center",
       gap: "1rem",
       maxWidth: "33rem",
+
+      "&:first-of-type": {
+        alignItems: "flex-end",
+      },
+      "&:last-of-type": {
+        alignItems: "flex-start",
+      },
+
+      div: {
+        textWrap: "balance",
+      },
     },
 
     "li + li": {
@@ -93,4 +108,5 @@ const CurrentIndicator = styled("span", {
 
 const RoleDates = styled("span", {
   color: "$gray",
+  whiteSpace: "nowrap",
 });

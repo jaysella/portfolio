@@ -9,6 +9,8 @@ import { EXPERIENCES, Experience } from "../data/experiences";
 
 import photo from "../public/me.jpg";
 
+import bay2Logo from "../public/logos/bay2.svg";
+import cfaLogo from "../public/logos/cfa.svg";
 import oasisLogo from "../public/logos/oasis.svg";
 import kccsLogo from "../public/logos/kccs.svg";
 import spcLogo from "../public/logos/spc.svg";
@@ -18,6 +20,8 @@ import tedxnuLogo from "../public/logos/tedxnu.svg";
 import { styled } from "../stitches.config";
 
 export default function Home() {
+  const LOGO_ROW_HEIGHT = 35;
+
   const heroBlocks = {
     visible: {
       opacity: 1,
@@ -90,96 +94,116 @@ export default function Home() {
           </div>
 
           <HeroRight initial="hidden" animate="visible" variants={heroBlocks}>
-            <Intro variants={heroBlock}>
-              Full-stack developer with a passion for leveraging technology to
-              enhance experiences.
-            </Intro>
+            <>
+              <Intro variants={heroBlock}>
+                Full-stack developer with a passion for leveraging technology to
+                enhance experiences.
+              </Intro>
 
-            <motion.p variants={heroBlock}>
-              Jay is a rising third-year Computer Science + Business student at
-              Northeastern University in Boston, MA and an incoming Digital
-              Transformation and Technology Co-op at{" "}
-              <a
-                href="https://www.chick-fil-a.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chick-fil-A
-              </a>{" "}
-              🧑‍🍳.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Jay is a rising third-year Computer Science + Business student
+                at Northeastern University in Boston, MA and an incoming Digital
+                Transformation and Technology Co-op at{" "}
+                <a
+                  href="https://www.chick-fil-a.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chick-fil-A
+                </a>{" "}
+                🧑‍🍳.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              This summer, he planned course curriculum + managed grading
-              processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
-              <a
-                href="https://www.khoury.northeastern.edu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Khoury
-              </a>{" "}
-              🎓. Jay also leads a team of 42 organizing interactive,
-              multi-disciplinary events at{" "}
-              <a
-                href="https://tedxnortheasternu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TEDxNU
-              </a>{" "}
-              🎙️.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                This summer, he planned course curriculum + managed grading
+                processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
+                <a
+                  href="https://www.khoury.northeastern.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Khoury
+                </a>{" "}
+                🎓. Jay also leads a team of 42 organizing interactive,
+                multi-disciplinary events at{" "}
+                <a
+                  href="https://tedxnortheasternu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TEDxNU
+                </a>{" "}
+                🎙️.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              Previously, he oversaw full-stack software development and product
-              management at{" "}
-              <a
-                href="https://tadpoletutoring.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tadpole
-              </a>{" "}
-              📚, mentored students and crafted web dev resources for{" "}
-              <a
-                href="https://www.oasisneu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Oasis
-              </a>{" "}
-              🌴, and managed business-critical infrastructure at{" "}
-              <a
-                href="https://spcfinancial.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SPC Financial
-              </a>{" "}
-              💼.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Previously, he oversaw full-stack software development and
+                product management at{" "}
+                <a
+                  href="https://tadpoletutoring.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tadpole
+                </a>{" "}
+                📚, mentored students and crafted web dev resources for{" "}
+                <a
+                  href="https://www.oasisneu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Oasis
+                </a>{" "}
+                🌴, and managed business-critical infrastructure at{" "}
+                <a
+                  href="https://spcfinancial.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SPC Financial
+                </a>{" "}
+                💼.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              Jay is a conscientious collaborator, punctilious problem-solver,
-              and tenacious tinkerer who embraces challenges and loves charting
-              new territory.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Jay is a conscientious collaborator, punctilious problem-solver,
+                and tenacious tinkerer who embraces challenges and loves
+                charting new territory.
+              </motion.p>
+            </>
 
             <LogosSection variants={logos}>
               <LogosRow>
                 <Image
+                  src={cfaLogo}
+                  alt="Chick-fil-A"
+                  height={LOGO_ROW_HEIGHT}
+                />
+                <Image
                   src={kccsLogo}
                   alt="Khoury College of Computer Sciences"
-                  height="30"
+                  height={LOGO_ROW_HEIGHT}
                 />
-                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="30" />
-                <Image src={spcLogo} alt="SPC Financial" height="30" />
+                <Image src={oasisLogo} alt="Oasis" height={LOGO_ROW_HEIGHT} />
+                <Image
+                  src={tadpoleLogo}
+                  alt="Tadpole Tutoring"
+                  height={LOGO_ROW_HEIGHT}
+                />
               </LogosRow>
 
               <LogosRow>
-                <Image src={tedxnuLogo} alt="TEDxNU" height="30" />
-                <Image src={oasisLogo} alt="Oasis" height="30" />
+                <Image
+                  src={spcLogo}
+                  alt="SPC Financial"
+                  height={LOGO_ROW_HEIGHT}
+                />
+                <Image src={tedxnuLogo} alt="TEDxNU" height={LOGO_ROW_HEIGHT} />
+                <Image
+                  src={bay2Logo}
+                  alt="BaySquared Consulting"
+                  height={LOGO_ROW_HEIGHT}
+                />
               </LogosRow>
             </LogosSection>
           </HeroRight>
@@ -317,7 +341,7 @@ const LogosSection = styled(motion.div, {
   flexWrap: "wrap",
   gap: "2.25rem",
   width: "100%",
-  marginTop: "3rem",
+  marginTop: "3.5rem",
   overflow: "auto",
 });
 
@@ -370,7 +394,7 @@ const StickyColumn = styled("div", {
 const ExperiencesColumn = styled(motion.div, {
   display: "flex",
   flexDirection: "column",
-  gap: "3rem",
+  gap: "3.5rem",
   maxHeight: "min-content",
   color: "#E6F5FE",
 });
