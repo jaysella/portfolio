@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export enum ExperienceType {
   PROFESSIONAL = "Professional",
   COMMUNITY = "Community",
@@ -35,7 +37,7 @@ export const EXPERIENCES: Experience[] = [
   //   roles: [
   //     {
   //       title: "Digital Transformation & Technology Co-Op",
-  //       startDate: new Date("Aug 2023"),
+  //       startDate: moment("Aug 2023").toDate(),
   //     },
   //   ],
   // },
@@ -48,17 +50,17 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Head Teaching Assistant, CS3500",
-        startDate: new Date("May 2023"),
+        startDate: moment("May 2023").toDate(),
       },
       {
         title: "Teaching Assistant, CS2510",
-        startDate: new Date("Jan 2023"),
-        endDate: new Date("May 2023"),
+        startDate: moment("Jan 2023").toDate(),
+        endDate: moment("May 2023").toDate(),
       },
       {
         title: "Teaching Assistant, CS2500",
-        startDate: new Date("Sep 2022"),
-        endDate: new Date("Dec 2022"),
+        startDate: moment("Sep 2022").toDate(),
+        endDate: moment("Dec 2022").toDate(),
       },
     ],
   },
@@ -71,12 +73,12 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Co-President",
-        startDate: new Date("May 2023"),
+        startDate: moment("May 2023").toDate(),
       },
       {
         title: "Director of Operations",
-        startDate: new Date("Oct 2022"),
-        endDate: new Date("May 2023"),
+        startDate: moment("Oct 2022").toDate(),
+        endDate: moment("May 2023").toDate(),
       },
     ],
   },
@@ -89,8 +91,8 @@ export const EXPERIENCES: Experience[] = [
   //   roles: [
   //     {
   //       title: "Mentor",
-  //       startDate: new Date("Jan 2023"),
-  //       endDate: new Date("Apr 2023"),
+  //       startDate: moment("Jan 2023").toDate(),
+  //       endDate: moment("Apr 2023").toDate(),
   //     },
   //   ],
   // },
@@ -103,13 +105,13 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Lead Software Engineer + Product Manager",
-        startDate: new Date("Oct 2022"),
-        endDate: new Date("Apr 2023"),
+        startDate: moment("Oct 2022").toDate(),
+        endDate: moment("Apr 2023").toDate(),
       },
       {
         title: "Full-Stack Developer",
-        startDate: new Date("Jul 2022"),
-        endDate: new Date("Oct 2022"),
+        startDate: moment("Jul 2022").toDate(),
+        endDate: moment("Oct 2022").toDate(),
       },
     ],
   },
@@ -122,18 +124,18 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Salesforce Administrator/Developer",
-        startDate: new Date("Jan 2022"),
-        endDate: new Date("Mar 2023"),
+        startDate: moment("Jan 2022").toDate(),
+        endDate: moment("Mar 2023").toDate(),
       },
       {
         title: "Digital Solutions Architect",
-        startDate: new Date("Jun 2019"),
-        endDate: new Date("Mar 2023"),
+        startDate: moment("Jun 2019").toDate(),
+        endDate: moment("Mar 2023").toDate(),
       },
       {
         title: "Marketing + Communications Intern",
-        startDate: new Date("Mar 2016"),
-        endDate: new Date("Jun 2019"),
+        startDate: moment("Mar 2016").toDate(),
+        endDate: moment("Jun 2019").toDate(),
       },
     ],
   },
@@ -143,27 +145,27 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "BaySquared Consulting: Owner",
-        startDate: new Date("Dec 2021"),
+        startDate: moment("Dec 2021").toDate(),
       },
       {
         title: "Oasis: Mentor",
-        startDate: new Date("Jan 2023"),
-        endDate: new Date("Apr 2023"),
+        startDate: moment("Jan 2023").toDate(),
+        endDate: moment("Apr 2023").toDate(),
       },
       {
         title: "Middlesex Beach: Webmaster + Tech Consultant",
-        startDate: new Date("Jan 2017"),
-        endDate: new Date("Jan 2021"),
+        startDate: moment("Jan 2017").toDate(),
+        endDate: moment("Jan 2021").toDate(),
       },
       {
         title: "SED Center: Classroom Assistant",
-        startDate: new Date("Sep 2019"),
-        endDate: new Date("Mar 2020"),
+        startDate: moment("Sep 2019").toDate(),
+        endDate: moment("Mar 2020").toDate(),
       },
       {
         title: "Castello Ragazzi: Webmaster + Comms Officer",
-        startDate: new Date("Jan 2016"),
-        endDate: new Date("Jan 2018"),
+        startDate: moment("Jan 2016").toDate(),
+        endDate: moment("Jan 2018").toDate(),
       },
     ],
   },
