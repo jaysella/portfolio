@@ -22,6 +22,9 @@ import { styled } from "../stitches.config";
 export default function Home() {
   const LOGO_ROW_HEIGHT = 35;
 
+  console.log(EXPERIENCES);
+
+
   const heroBlocks = {
     visible: {
       opacity: 1,
