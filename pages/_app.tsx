@@ -1,7 +1,8 @@
-import Footer from "../components/footer";
+import { AppProps } from "next/app";
+import Footer from "../components/Footer";
 import { globalStyles, styled } from "../stitches.config";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
 
   return (

@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
-export default function ExperienceTitle({ variants }) {
+export default function ExperienceTitle({ variants }: { variants: Variants }) {
   return (
     <>
       <motion.svg

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
-import ExperienceTitle from "../components/experienceTitle";
+import ExperienceTitle from "../components/ExperienceTitle";
 import ExperienceBlock from "../components/ExperienceBlock";
 
 import { EXPERIENCES, Experience } from "../data/experiences";
