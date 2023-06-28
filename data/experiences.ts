@@ -5,7 +5,7 @@ export enum ExperienceType {
 }
 
 export enum LocationType {
-  ON_SITE = "On Site",
+  ON_SITE = "On-Site",
   HYBRID = "Hybrid",
   REMOTE = "Remote",
 }
@@ -35,12 +35,12 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Head Teaching Assistant, CS3500",
-        startDate: new Date("2023-05"),
+        startDate: new Date("May 2023"),
       },
       {
         title: "Teaching Assistant, CS2510",
-        startDate: new Date("2023-01"),
-        endDate: new Date("2023-05"),
+        startDate: new Date("Jan 2023"),
+        endDate: new Date("May 2023"),
       },
     ],
   },
@@ -53,13 +53,80 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Lead Software Engineer + Product Manager",
-        startDate: new Date("2022-10"),
-        endDate: new Date("2023-04"),
+        startDate: new Date("Oct 2022"),
+        endDate: new Date("Apr 2023"),
       },
       {
         title: "Full-Stack Developer",
-        startDate: new Date("2022-07"),
-        endDate: new Date("2022-10"),
+        startDate: new Date("Jul 2022"),
+        endDate: new Date("Oct 2022"),
+      },
+    ],
+  },
+  {
+    slug: "spc-financial",
+    company: "SPC Financial",
+    type: ExperienceType.PROFESSIONAL,
+    location: "Rockville, MD",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Salesforce Administrator/Developer",
+        startDate: new Date("Jan 2022"),
+      },
+      {
+        title: "Digital Solutions Architect",
+        startDate: new Date("Jun 2019"),
+      },
+      {
+        title: "Marketing + Communications Intern",
+        startDate: new Date("Mar 2016"),
+        endDate: new Date("Jun 2019"),
+      },
+    ],
+  },
+  {
+    slug: "tedxnu",
+    company: "TEDxNU",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Co-President",
+        startDate: new Date("May 2023"),
+      },
+      {
+        title: "Director of Operations",
+        startDate: new Date("Oct 2022"),
+        endDate: new Date("May 2023"),
+      },
+    ],
+  },
+  {
+    slug: "oasis",
+    company: "Oasis",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.ON_SITE,
+    roles: [
+      {
+        title: "Mentor",
+        startDate: new Date("Jan 2023"),
+        endDate: new Date("Apr 2023"),
+      },
+    ],
+  },
+  {
+    slug: "baysquared",
+    company: "BaySquared Consulting",
+    type: ExperienceType.PROFESSIONAL,
+    location: "Maryland",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Owner",
+        startDate: new Date("Dec 2021"),
       },
     ],
   },

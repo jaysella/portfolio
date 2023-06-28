@@ -13,7 +13,7 @@ export default function ExperienceBlock({
       <BlockHeader>
         <div>
           {experience.location}
-          <span> &bull; {experience.locationType}</span>
+          <span> &bull; {experience.type}</span>
         </div>
         <h3>{experience.company}</h3>
       </BlockHeader>
@@ -75,6 +75,7 @@ const BlockBody = styled("div", {
       flexDirection: "row",
       justifyContent: "space-between",
       alignItems: "center",
+      gap: "1rem",
       maxWidth: "33rem",
     },
 

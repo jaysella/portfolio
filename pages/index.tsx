@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 
 import ExperienceTitle from "../components/experienceTitle";
-import Experiences from "../components/experiences";
 import ExperienceBlock from "../components/ExperienceBlock";
 
 import { EXPERIENCES, Experience } from "../data/experiences";
@@ -48,14 +47,14 @@ export default function Home() {
   const sectionTitle = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i) => {
-      const delay = 0.15 + i * 0.5;
+      const delay = 0.25 + i * 0.25;
 
       return {
         pathLength: 1,
         opacity: 1,
         transition: {
-          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-          opacity: { delay, duration: 0.4 },
+          pathLength: { delay, type: "spring", duration: 1.35, bounce: 0 },
+          opacity: { delay, duration: 0.3 },
         },
       };
     },
@@ -169,33 +168,35 @@ export default function Home() {
 
             <LogosSection variants={logos}>
               <LogosRow>
-                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="30" />
                 <Image
                   src={kccsLogo}
                   alt="Khoury College of Computer Sciences"
                   height="30"
                 />
+                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="30" />
                 <Image src={spcLogo} alt="SPC Financial" height="30" />
               </LogosRow>
 
               <LogosRow>
-                <Image src={oasisLogo} alt="Oasis" height="30" />
                 <Image src={tedxnuLogo} alt="TEDxNU" height="30" />
+                <Image src={oasisLogo} alt="Oasis" height="30" />
               </LogosRow>
             </LogosSection>
           </HeroRight>
         </HeroSectionGrid>
       </HeroSection>
 
-      <SectionTitle>
-        <ExperienceTitle variants={sectionTitle} />
-      </SectionTitle>
+      <Separator />
 
       <ExperienceSection>
-        {EXPERIENCES.map((e: Experience) => (
-          <ExperienceBlock key={e.slug} experience={e} />
-        ))}
-        {/* <Experiences /> */}
+        <StickyColumn>
+          <ExperienceTitle variants={sectionTitle} />
+        </StickyColumn>
+        <ExperiencesColumn>
+          {EXPERIENCES.map((e: Experience) => (
+            <ExperienceBlock key={e.slug} experience={e} />
+          ))}
+        </ExperiencesColumn>
       </ExperienceSection>
     </>
   );
@@ -306,6 +307,7 @@ const Intro = styled(motion.h1, {
   fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
   fontWeight: "700",
   marginBottom: "2.5rem",
+  textWrap: "balance",
 });
 
 const LogosSection = styled(motion.div, {
@@ -327,43 +329,48 @@ const LogosRow = styled("div", {
   gap: "2rem",
 });
 
-const SectionTitle = styled("div", {
-  display: "flex",
-  justifyContent: "center",
-  margin: "0 auto 5rem",
-  padding: "0 3.5rem",
-
-  svg: {
-    maxWidth: "1500px",
-    height: "auto",
-  },
-
-  "@md": {
-    marginBottom: "5rem",
-  },
-});
-
-const ExperienceSectionOld = styled(motion.div, {
-  maxHeight: "min-content",
-  marginX: "auto",
-  paddingY: "1.5rem",
-  color: "#E6F5FE",
-
-  "@md": {
-    paddingY: "3.5rem",
-  },
+const Separator = styled("div", {
+  width: "100%",
+  height: "5px",
+  backgroundColor: "$yellowCream",
 });
 
 const ExperienceSection = styled(motion.section, {
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
+  padding: "3rem 1.5rem",
   gap: "3rem",
-  maxHeight: "min-content",
-  marginX: "auto",
-  padding: "1.5rem",
-  color: "#E6F5FE",
 
   "@md": {
-    padding: "3.5rem",
+    padding: "3rem",
   },
+
+  "@lg": {
+    flexDirection: "row",
+    padding: "5rem 4rem",
+  },
+
+  "@xl": {
+    marginX: "auto",
+    maxWidth: "72.5rem",
+  },
+});
+
+const StickyColumn = styled("div", {
+  "@md": {
+    svg: {
+      position: "sticky",
+      top: "5rem",
+      left: 0,
+    },
+  },
+});
+
+const ExperiencesColumn = styled(motion.div, {
+  display: "flex",
+  flexDirection: "column",
+  gap: "3rem",
+  maxHeight: "min-content",
+  color: "#E6F5FE",
 });
