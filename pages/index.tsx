@@ -382,8 +382,10 @@ const ExperienceSection = styled(motion.section, {
 });
 
 const StickyColumn = styled("div", {
-  "@md": {
-    svg: {
+  svg: {
+    maxWidth: "100%",
+
+    "@md": {
       position: "sticky",
       top: "5rem",
       left: 0,
