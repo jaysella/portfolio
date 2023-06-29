@@ -25,8 +25,8 @@ const Wrapper = styled("footer", {
   display: "flex",
   flexDirection: "column",
   paddingY: "2rem",
-  borderTop: "1px solid $carrot",
-  color: "$carrot",
+  borderTop: "1px solid $blueScooter",
+  color: "$blueScooter",
   justifyContent: "center",
   alignItems: "center",
 

@@ -2,11 +2,15 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
-import ExperienceTitle from "../components/experienceTitle";
-import Experiences from "../components/experiences";
+import ExperienceTitle from "../components/ExperienceTitle";
+import ExperienceBlock from "../components/ExperienceBlock";
+
+import { EXPERIENCES, Experience } from "../data/experiences";
 
 import photo from "../public/me.jpg";
 
+import bay2Logo from "../public/logos/bay2.svg";
+import cfaLogo from "../public/logos/cfa.svg";
 import oasisLogo from "../public/logos/oasis.svg";
 import kccsLogo from "../public/logos/kccs.svg";
 import spcLogo from "../public/logos/spc.svg";
@@ -16,6 +20,9 @@ import tedxnuLogo from "../public/logos/tedxnu.svg";
 import { styled } from "../stitches.config";
 
 export default function Home() {
+  const LOGO_ROW_HEIGHT = 35;
+
+
   const heroBlocks = {
     visible: {
       opacity: 1,
@@ -45,14 +52,14 @@ export default function Home() {
   const sectionTitle = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i) => {
-      const delay = 0.15 + i * 0.5;
+      const delay = 0.25 + i * 0.25;
 
       return {
         pathLength: 1,
         opacity: 1,
         transition: {
-          pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
-          opacity: { delay, duration: 0.4 },
+          pathLength: { delay, type: "spring", duration: 1.35, bounce: 0 },
+          opacity: { delay, duration: 0.3 },
         },
       };
     },
@@ -88,108 +95,133 @@ export default function Home() {
           </div>
 
           <HeroRight initial="hidden" animate="visible" variants={heroBlocks}>
-            <Intro variants={heroBlock}>
-              Full-stack developer with a passion for leveraging technology to
-              enhance experiences.
-            </Intro>
+            <>
+              <Intro variants={heroBlock}>
+                Full-stack developer with a passion for leveraging technology to
+                enhance experiences.
+              </Intro>
 
-            <motion.p variants={heroBlock}>
-              Jay is a rising third-year Computer Science + Business student at
-              Northeastern University in Boston, MA and an incoming Digital
-              Transformation and Technology Co-op at{" "}
-              <a
-                href="https://www.chick-fil-a.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chick-fil-A
-              </a>{" "}
-              🧑‍🍳.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Jay is a rising third-year Computer Science + Business student
+                at Northeastern University in Boston, MA and an incoming Digital
+                Transformation and Technology Co-op at{" "}
+                <a
+                  href="https://www.chick-fil-a.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chick-fil-A
+                </a>{" "}
+                🧑‍🍳.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              This summer, he planned course curriculum + managed grading
-              processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
-              <a
-                href="https://www.khoury.northeastern.edu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Khoury
-              </a>{" "}
-              🎓. Jay also leads a team of 42 organizing interactive,
-              multi-disciplinary events at{" "}
-              <a
-                href="https://tedxnortheasternu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                TEDxNU
-              </a>{" "}
-              🎙️.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                This summer, he planned course curriculum + managed grading
+                processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
+                <a
+                  href="https://www.khoury.northeastern.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Khoury
+                </a>{" "}
+                🎓. Jay also leads a team of 42 organizing interactive,
+                multi-disciplinary events at{" "}
+                <a
+                  href="https://tedxnortheasternu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TEDxNU
+                </a>{" "}
+                🎙️.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              Previously, he oversaw full-stack software development and product
-              management at{" "}
-              <a
-                href="https://tadpoletutoring.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Tadpole
-              </a>{" "}
-              📚, mentored students and crafted web dev resources for{" "}
-              <a
-                href="https://www.oasisneu.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Oasis
-              </a>{" "}
-              🌴, and managed business-critical infrastructure at{" "}
-              <a
-                href="https://spcfinancial.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                SPC Financial
-              </a>{" "}
-              💼.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Previously, he oversaw full-stack software development and
+                product management at{" "}
+                <a
+                  href="https://tadpoletutoring.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tadpole
+                </a>{" "}
+                📚, mentored students and crafted web dev resources for{" "}
+                <a
+                  href="https://www.oasisneu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Oasis
+                </a>{" "}
+                🌴, and managed business-critical infrastructure at{" "}
+                <a
+                  href="https://spcfinancial.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SPC Financial
+                </a>{" "}
+                💼.
+              </motion.p>
 
-            <motion.p variants={heroBlock}>
-              Jay is a conscientious collaborator, punctilious problem-solver,
-              and tenacious tinkerer who embraces challenges and loves charting
-              new territory.
-            </motion.p>
+              <motion.p variants={heroBlock}>
+                Jay is a conscientious collaborator, punctilious problem-solver,
+                and tenacious tinkerer who embraces challenges and loves
+                charting new territory.
+              </motion.p>
+            </>
 
             <LogosSection variants={logos}>
               <LogosRow>
-                <Image src={tadpoleLogo} alt="Tadpole Tutoring" height="30" />
+                <Image
+                  src={cfaLogo}
+                  alt="Chick-fil-A"
+                  height={LOGO_ROW_HEIGHT}
+                />
                 <Image
                   src={kccsLogo}
                   alt="Khoury College of Computer Sciences"
-                  height="30"
+                  height={LOGO_ROW_HEIGHT}
                 />
-                <Image src={spcLogo} alt="SPC Financial" height="30" />
+                <Image src={oasisLogo} alt="Oasis" height={LOGO_ROW_HEIGHT} />
+                <Image
+                  src={tadpoleLogo}
+                  alt="Tadpole Tutoring"
+                  height={LOGO_ROW_HEIGHT}
+                />
               </LogosRow>
 
               <LogosRow>
-                <Image src={oasisLogo} alt="Oasis" height="30" />
-                <Image src={tedxnuLogo} alt="TEDxNU" height="30" />
+                <Image
+                  src={spcLogo}
+                  alt="SPC Financial"
+                  height={LOGO_ROW_HEIGHT}
+                />
+                <Image src={tedxnuLogo} alt="TEDxNU" height={LOGO_ROW_HEIGHT} />
+                <Image
+                  src={bay2Logo}
+                  alt="BaySquared Consulting"
+                  height={LOGO_ROW_HEIGHT}
+                />
               </LogosRow>
             </LogosSection>
           </HeroRight>
         </HeroSectionGrid>
       </HeroSection>
 
-      <SectionTitle>
-        <ExperienceTitle variants={sectionTitle} />
-      </SectionTitle>
+      <Separator />
 
       <ExperienceSection>
-        <Experiences />
+        <StickyColumn>
+          <ExperienceTitle variants={sectionTitle} />
+        </StickyColumn>
+        <ExperiencesColumn>
+          {EXPERIENCES.map((e: Experience) => (
+            <ExperienceBlock key={e.slug} experience={e} />
+          ))}
+        </ExperiencesColumn>
       </ExperienceSection>
     </>
   );
@@ -229,11 +261,11 @@ const HeroSectionGrid = styled(motion.div, {
     position: "relative",
     textDecoration: "none",
     zIndex: 2,
-    color: "$carrot",
+    color: "$blueScooter",
 
     "&:hover": {
       "&:before": {
-        color: "$carrot",
+        color: "$blueScooter",
         transition: "transform 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275)",
         transformOrigin: "left",
         background:
@@ -300,6 +332,7 @@ const Intro = styled(motion.h1, {
   fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
   fontWeight: "700",
   marginBottom: "2.5rem",
+  textWrap: "balance",
 });
 
 const LogosSection = styled(motion.div, {
@@ -309,7 +342,7 @@ const LogosSection = styled(motion.div, {
   flexWrap: "wrap",
   gap: "2.25rem",
   width: "100%",
-  marginTop: "3rem",
+  marginTop: "3.5rem",
   overflow: "auto",
 });
 
@@ -321,29 +354,50 @@ const LogosRow = styled("div", {
   gap: "2rem",
 });
 
-const SectionTitle = styled("div", {
-  display: "flex",
-  justifyContent: "center",
-  margin: "0 auto 5rem",
-  padding: "0 3.5rem",
+const Separator = styled("div", {
+  width: "100%",
+  height: "5px",
+  backgroundColor: "$yellowCream",
+});
 
-  svg: {
-    maxWidth: "1500px",
-    height: "auto",
-  },
+const ExperienceSection = styled(motion.section, {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  padding: "3rem 1.5rem",
+  gap: "3rem",
 
   "@md": {
-    marginBottom: "5rem",
+    padding: "3rem",
+  },
+
+  "@lg": {
+    flexDirection: "row",
+    padding: "5rem 4rem",
+  },
+
+  "@xl": {
+    marginX: "auto",
+    maxWidth: "72.5rem",
   },
 });
 
-const ExperienceSection = styled(motion.div, {
-  maxHeight: "min-content",
-  marginX: "auto",
-  paddingY: "1.5rem",
-  color: "#E6F5FE",
+const StickyColumn = styled("div", {
+  svg: {
+    maxWidth: "100%",
 
-  "@md": {
-    paddingY: "3.5rem",
+    "@md": {
+      position: "sticky",
+      top: "5rem",
+      left: 0,
+    },
   },
+});
+
+const ExperiencesColumn = styled(motion.div, {
+  display: "flex",
+  flexDirection: "column",
+  gap: "3.5rem",
+  maxHeight: "min-content",
+  color: "#E6F5FE",
 });

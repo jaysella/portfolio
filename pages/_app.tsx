@@ -1,7 +1,8 @@
-import Footer from "../components/footer";
+import { AppProps } from "next/app";
+import Footer from "../components/Footer";
 import { globalStyles, styled } from "../stitches.config";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
 
   return (
@@ -24,7 +25,7 @@ const PageOuter = styled("div", {
   height: "100dvh",
   overflow: "hidden",
   backgroundColor: "#011019",
-  border: "var(--page-border-width) solid $carrot",
+  border: "var(--page-border-width) solid $blueScooter",
 });
 
 const PageInner = styled("div", {
