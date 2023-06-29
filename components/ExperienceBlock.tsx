@@ -101,7 +101,7 @@ const BlockBody = styled("div", {
 });
 
 const CurrentIndicator = styled("span", {
-  color: "$carrot",
+  color: "$blueScooter",
   fontWeight: "$bold",
   marginLeft: "0.375rem",
 });

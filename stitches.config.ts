@@ -16,7 +16,7 @@ export const {
       cream: "#F6F5F1",
       gray: "#98A8B7",
       blue: "#021662",
-      carrot: "#27B2C7",
+      blueScooter: "#27B2C7",
       yellowCream: "#F2D16B",
     },
     fonts: {

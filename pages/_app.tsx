@@ -25,7 +25,7 @@ const PageOuter = styled("div", {
   height: "100dvh",
   overflow: "hidden",
   backgroundColor: "#011019",
-  border: "var(--page-border-width) solid $carrot",
+  border: "var(--page-border-width) solid $blueScooter",
 });
 
 const PageInner = styled("div", {
