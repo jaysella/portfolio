@@ -1,19 +1,27 @@
 import { AppProps } from "next/app";
 import Footer from "../components/Footer";
 import { globalStyles, styled } from "../stitches.config";
+import { IconoirProvider } from "iconoir-react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   globalStyles();
 
   return (
-    <PageOuter>
-      <PageInner>
-        <main>
-          <Component {...pageProps} />
-        </main>
-        <Footer />
-      </PageInner>
-    </PageOuter>
+    <IconoirProvider
+      iconProps={{
+        color: "currentColor",
+        strokeWidth: 1.5,
+      }}
+    >
+      <PageOuter>
+        <PageInner>
+          <main>
+            <Component {...pageProps} />
+          </main>
+          <Footer />
+        </PageInner>
+      </PageOuter>
+    </IconoirProvider>
   );
 }
 

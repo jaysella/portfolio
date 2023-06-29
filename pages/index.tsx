@@ -2,12 +2,9 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
-import ExperienceTitle from "../components/ExperienceTitle";
-import ExperienceBlock from "../components/ExperienceBlock";
-
-import { EXPERIENCES, Experience } from "../data/experiences";
-
 import photo from "../public/me.jpg";
+
+import highlights from "../public/illustrations/highlights.svg";
 
 import bay2Logo from "../public/logos/bay2.svg";
 import cfaLogo from "../public/logos/cfa.svg";
@@ -18,10 +15,10 @@ import tadpoleLogo from "../public/logos/tadpole.svg";
 import tedxnuLogo from "../public/logos/tedxnu.svg";
 
 import { styled } from "../stitches.config";
+import ExperienceSection from "../components/ExperienceSection";
 
 export default function Home() {
   const LOGO_ROW_HEIGHT = 35;
-
 
   const heroBlocks = {
     visible: {
@@ -47,22 +44,6 @@ export default function Home() {
   const logos = {
     visible: { opacity: 1, y: 0, transition: { delay: 2.5 } },
     hidden: { opacity: 0, y: 25 },
-  };
-
-  const sectionTitle = {
-    hidden: { pathLength: 0, opacity: 0 },
-    visible: (i) => {
-      const delay = 0.25 + i * 0.25;
-
-      return {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-          pathLength: { delay, type: "spring", duration: 1.35, bounce: 0 },
-          opacity: { delay, duration: 0.3 },
-        },
-      };
-    },
   };
 
   return (
@@ -173,7 +154,7 @@ export default function Home() {
               </motion.p>
             </>
 
-            <LogosSection variants={logos}>
+            {/* <LogosSection variants={logos}>
               <LogosRow>
                 <Image
                   src={cfaLogo}
@@ -206,23 +187,20 @@ export default function Home() {
                   height={LOGO_ROW_HEIGHT}
                 />
               </LogosRow>
-            </LogosSection>
+            </LogosSection> */}
           </HeroRight>
         </HeroSectionGrid>
       </HeroSection>
 
+      <HighlightsSection variants={logos}>
+        <Image src={highlights} alt="Highlights" />
+      </HighlightsSection>
+
       <Separator />
 
-      <ExperienceSection>
-        <StickyColumn>
-          <ExperienceTitle variants={sectionTitle} />
-        </StickyColumn>
-        <ExperiencesColumn>
-          {EXPERIENCES.map((e: Experience) => (
-            <ExperienceBlock key={e.slug} experience={e} />
-          ))}
-        </ExperiencesColumn>
-      </ExperienceSection>
+      <ExperienceWrapper>
+        <ExperienceSection />
+      </ExperienceWrapper>
     </>
   );
 }
@@ -234,7 +212,7 @@ const HeroSection = styled("section", {
   maxWidth: "47rem",
   paddingX: "1.5rem",
   color: "#E6F5FE",
-  minHeight: "100vh",
+  // minHeight: "100vh",
 
   "@md": {
     paddingTop: "3.5rem",
@@ -346,6 +324,24 @@ const LogosSection = styled(motion.div, {
   overflow: "auto",
 });
 
+const HighlightsSection = styled(motion.div, {
+  display: "none",
+  flexDirection: "row",
+  justifyContent: "center",
+  width: "100%",
+  marginBottom: "5rem",
+  paddingX: "0.5rem",
+
+  img: {
+    maxWidth: "100%",
+  },
+
+  "@md": {
+    display: "flex",
+  },
+  // marginTop: "3.5rem",
+});
+
 const LogosRow = styled("div", {
   display: "flex",
   flexDirection: "row",
@@ -360,7 +356,7 @@ const Separator = styled("div", {
   backgroundColor: "$yellowCream",
 });
 
-const ExperienceSection = styled(motion.section, {
+const ExperienceWrapper = styled(motion.section, {
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
@@ -374,6 +370,7 @@ const ExperienceSection = styled(motion.section, {
   "@lg": {
     flexDirection: "row",
     padding: "5rem 4rem",
+    gap: "5rem",
   },
 
   "@xl": {
@@ -382,22 +379,3 @@ const ExperienceSection = styled(motion.section, {
   },
 });
 
-const StickyColumn = styled("div", {
-  svg: {
-    maxWidth: "100%",
-
-    "@md": {
-      position: "sticky",
-      top: "5rem",
-      left: 0,
-    },
-  },
-});
-
-const ExperiencesColumn = styled(motion.div, {
-  display: "flex",
-  flexDirection: "column",
-  gap: "3.5rem",
-  maxHeight: "min-content",
-  color: "#E6F5FE",
-});
