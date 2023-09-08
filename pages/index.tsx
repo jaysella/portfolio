@@ -22,7 +22,6 @@ import { styled } from "../stitches.config";
 export default function Home() {
   const LOGO_ROW_HEIGHT = 35;
 
-
   const heroBlocks = {
     visible: {
       opacity: 1,
@@ -97,14 +96,20 @@ export default function Home() {
           <HeroRight initial="hidden" animate="visible" variants={heroBlocks}>
             <>
               <Intro variants={heroBlock}>
-                Full-stack developer with a passion for leveraging technology to
-                enhance experiences.
+                Leveraging technology to enhance experiences.
               </Intro>
 
               <motion.p variants={heroBlock}>
-                Jay is a rising third-year Computer Science + Business student
-                at Northeastern University in Boston, MA and an incoming Digital
-                Transformation and Technology Co-op at{" "}
+                Jay is a third-year Computer Science + Business Administration
+                student at{" "}
+                <a
+                  href="https://www.northeastern.edu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Northeastern University
+                </a>{" "}
+                📓, a Digital Transformation and Technology Co-op at{" "}
                 <a
                   href="https://www.chick-fil-a.com/"
                   target="_blank"
@@ -112,12 +117,19 @@ export default function Home() {
                 >
                   Chick-fil-A
                 </a>{" "}
-                🧑‍🍳.
+                🐓, and Co-President of{" "}
+                <a
+                  href="https://tedxnortheasternu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TEDxNortheasternU
+                </a>{" "}
+                🎙️ where he oversees an organization of 41.
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                This summer, he planned course curriculum + managed grading
-                processes for 350 students in CS3500 (Object-Oriented Design) at{" "}
+                At{" "}
                 <a
                   href="https://www.khoury.northeastern.edu/"
                   target="_blank"
@@ -125,21 +137,15 @@ export default function Home() {
                 >
                   Khoury
                 </a>{" "}
-                🎓. Jay also leads a team of 42 organizing interactive,
-                multi-disciplinary events at{" "}
-                <a
-                  href="https://tedxnortheasternu.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TEDxNU
-                </a>{" "}
-                🎙️.
+                🎓, he recently designed + built interactive technical modules
+                for 525 students in CS1200 (First-Year Seminar) and established
+                grading processes for 50 TAs across 5,000 student submissions in
+                CS3500 (Object-Oriented Design).
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                Previously, he oversaw full-stack software development and
-                product management at{" "}
+                He has also overseen full-stack software development and product
+                management at{" "}
                 <a
                   href="https://tadpoletutoring.org"
                   target="_blank"
@@ -331,7 +337,8 @@ const HeroRight = styled(motion.div, {
 const Intro = styled(motion.h1, {
   fontSize: "clamp(1.5rem, 5vw, 2.2rem)",
   fontWeight: "700",
-  marginBottom: "2.5rem",
+  marginTop: "0.75rem",
+  marginBottom: "1.6rem",
   textWrap: "balance",
 });
 

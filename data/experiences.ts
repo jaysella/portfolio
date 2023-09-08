@@ -28,19 +28,19 @@ export type Role = {
 };
 
 export const EXPERIENCES: Experience[] = [
-  // {
-  //   slug: "cfa",
-  //   company: "Chick-fil-A",
-  //   type: ExperienceType.PROFESSIONAL,
-  //   location: "Atlanta, GA",
-  //   locationType: LocationType.HYBRID,
-  //   roles: [
-  //     {
-  //       title: "Digital Transformation & Technology Co-Op",
-  //       startDate: moment({year: 2023, month: "Aug", day: 1}).toDate(),
-  //     },
-  //   ],
-  // },
+  {
+    slug: "cfa",
+    company: "Chick-fil-A",
+    type: ExperienceType.PROFESSIONAL,
+    location: "Atlanta, GA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Digital Transformation & Technology Co-Op",
+        startDate: moment({ year: 2023, month: 7, day: 1 }).toDate(),
+      },
+    ],
+  },
   {
     slug: "khoury",
     company: "Khoury College of Computer Sciences",
@@ -49,8 +49,13 @@ export const EXPERIENCES: Experience[] = [
     locationType: LocationType.HYBRID,
     roles: [
       {
+        title: "Technical Module Developer, CS1200",
+        startDate: moment({ year: 2023, month: 5, day: 1 }).toDate(),
+      },
+      {
         title: "Head Teaching Assistant, CS3500",
         startDate: moment({ year: 2023, month: 3, day: 1 }).toDate(),
+        endDate: moment({ year: 2023, month: 5, day: 1 }).toDate(),
       },
       {
         title: "Teaching Assistant, CS2510",
@@ -66,7 +71,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     slug: "tedxnu",
-    company: "TEDxNU",
+    company: "TEDxNortheasternU",
     type: ExperienceType.COMMUNITY,
     location: "Boston, MA",
     locationType: LocationType.HYBRID,
