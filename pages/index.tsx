@@ -15,7 +15,9 @@ import oasisLogo from "../public/logos/oasis.svg";
 import kccsLogo from "../public/logos/kccs.svg";
 import spcLogo from "../public/logos/spc.svg";
 import tadpoleLogo from "../public/logos/tadpole.svg";
-import tedxnuLogo from "../public/logos/tedxnu.svg";
+import tedxLogo from "../public/logos/tedxnortheasternu.svg";
+
+import highlights from "../public/illustrations/highlights.svg";
 
 import { styled } from "../stitches.config";
 
@@ -205,7 +207,11 @@ export default function Home() {
                   alt="SPC Financial"
                   height={LOGO_ROW_HEIGHT}
                 />
-                <Image src={tedxnuLogo} alt="TEDxNU" height={LOGO_ROW_HEIGHT} />
+                <Image
+                  src={tedxLogo}
+                  alt="TEDxNortheasternU"
+                  height={LOGO_ROW_HEIGHT / 2}
+                />
                 <Image
                   src={bay2Logo}
                   alt="BaySquared Consulting"
@@ -216,6 +222,10 @@ export default function Home() {
           </HeroRight>
         </HeroSectionGrid>
       </HeroSection>
+
+      <HighlightsSection variants={logos}>
+        <Image src={highlights} alt="Highlights" />
+      </HighlightsSection>
 
       <Separator />
 
@@ -357,8 +367,27 @@ const LogosRow = styled("div", {
   display: "flex",
   flexDirection: "row",
   justifyContent: "center",
+  alignItems: "center",
   flexWrap: "wrap",
   gap: "2rem",
+});
+
+const HighlightsSection = styled(motion.div, {
+  display: "none",
+  flexDirection: "row",
+  justifyContent: "center",
+  width: "100%",
+  marginBottom: "5rem",
+  paddingX: "0.5rem",
+
+  img: {
+    maxWidth: "100%",
+  },
+
+  "@md": {
+    display: "flex",
+  },
+  // marginTop: "3.5rem",
 });
 
 const Separator = styled("div", {
