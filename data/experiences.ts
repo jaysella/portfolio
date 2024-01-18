@@ -29,19 +29,6 @@ export type Role = {
 
 export const EXPERIENCES: Experience[] = [
   {
-    slug: "cfa",
-    company: "Chick-fil-A",
-    type: ExperienceType.PROFESSIONAL,
-    location: "Atlanta, GA",
-    locationType: LocationType.HYBRID,
-    roles: [
-      {
-        title: "Digital Transformation & Technology Co-Op",
-        startDate: moment({ year: 2023, month: 7, day: 1 }).toDate(),
-      },
-    ],
-  },
-  {
     slug: "khoury",
     company: "Khoury College of Computer Sciences",
     type: ExperienceType.PROFESSIONAL,
@@ -49,23 +36,50 @@ export const EXPERIENCES: Experience[] = [
     locationType: LocationType.HYBRID,
     roles: [
       {
-        title: "Technical Module Developer, CS1200",
-        startDate: moment({ year: 2023, month: 5, day: 1 }).toDate(),
+        title: "Curriculum Innovation Developer",
+        startDate: moment({ year: 2024, month: 0 }).toDate(),
       },
       {
-        title: "Head Teaching Assistant, CS3500",
-        startDate: moment({ year: 2023, month: 3, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 5, day: 1 }).toDate(),
+        title:
+          "Technical Module Developer & Head Teaching Assistant, First-Year Seminar (CS 1200)",
+        startDate: moment({ year: 2023, month: 5 }).toDate(),
+        endDate: moment({ year: 2023, month: 11 }).toDate(),
       },
       {
-        title: "Teaching Assistant, CS2510",
-        startDate: moment({ year: 2023, month: 0, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 3, day: 1 }).toDate(),
+        title: "Teaching Assistant",
+        startDate: moment({ year: 2022, month: 8 }).toDate(),
+        endDate: moment({ year: 2023, month: 5 }).toDate(),
+      },
+    ],
+  },
+  {
+    slug: "oasis",
+    company: "Oasis",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.ON_SITE,
+    roles: [
+      {
+        title: "Project Series Director",
+        startDate: moment({ year: 2024, month: 0 }).toDate(),
       },
       {
-        title: "Teaching Assistant, CS2500",
-        startDate: moment({ year: 2022, month: 8, day: 1 }).toDate(),
-        endDate: moment({ year: 2022, month: 11, day: 1 }).toDate(),
+        title: "Mentor & Resource Author",
+        startDate: moment({ year: 2023, month: 0 }).toDate(),
+        endDate: moment({ year: 2023, month: 3 }).toDate(),
+      },
+    ],
+  },
+  {
+    slug: "cfa",
+    company: "Chick-fil-A",
+    type: ExperienceType.PROFESSIONAL,
+    location: "Atlanta, GA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Software Engineer (Co-Op)",
+        startDate: moment({ year: 2023, month: 7 }).toDate(),
       },
     ],
   },
@@ -78,29 +92,15 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Co-President",
-        startDate: moment({ year: 2023, month: 4, day: 1 }).toDate(),
+        startDate: moment({ year: 2023, month: 4 }).toDate(),
       },
       {
         title: "Director of Operations",
-        startDate: moment({ year: 2022, month: 9, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 4, day: 1 }).toDate(),
+        startDate: moment({ year: 2022, month: 9 }).toDate(),
+        endDate: moment({ year: 2023, month: 4 }).toDate(),
       },
     ],
   },
-  // {
-  //   slug: "oasis",
-  //   company: "Oasis",
-  //   type: ExperienceType.COMMUNITY,
-  //   location: "Boston, MA",
-  //   locationType: LocationType.ON_SITE,
-  //   roles: [
-  //     {
-  //       title: "Mentor",
-  //       startDate: moment({year: 2023, month: 0, day: 1}).toDate(),
-  //       endDate: moment({year: 2023, month: 3, day: 1}).toDate(),
-  //     },
-  //   ],
-  // },
   {
     slug: "tadpole",
     company: "Tadpole Tutoring",
@@ -110,13 +110,13 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Lead Software Engineer + Product Manager",
-        startDate: moment({ year: 2022, month: 9, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 3, day: 1 }).toDate(),
+        startDate: moment({ year: 2022, month: 9 }).toDate(),
+        endDate: moment({ year: 2023, month: 3 }).toDate(),
       },
       {
         title: "Full-Stack Developer",
-        startDate: moment({ year: 2022, month: 6, day: 1 }).toDate(),
-        endDate: moment({ year: 2022, month: 9, day: 1 }).toDate(),
+        startDate: moment({ year: 2022, month: 6 }).toDate(),
+        endDate: moment({ year: 2022, month: 9 }).toDate(),
       },
     ],
   },
@@ -129,18 +129,18 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "Salesforce Administrator/Developer",
-        startDate: moment({ year: 2022, month: 0, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 2, day: 1 }).toDate(),
+        startDate: moment({ year: 2022, month: 0 }).toDate(),
+        endDate: moment({ year: 2023, month: 2 }).toDate(),
       },
       {
         title: "Digital Solutions Architect",
-        startDate: moment({ year: 2019, month: 5, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 2, day: 1 }).toDate(),
+        startDate: moment({ year: 2019, month: 5 }).toDate(),
+        endDate: moment({ year: 2023, month: 2 }).toDate(),
       },
       {
         title: "Marketing + Communications Intern",
-        startDate: moment({ year: 2016, month: 2, day: 1 }).toDate(),
-        endDate: moment({ year: 2019, month: 5, day: 1 }).toDate(),
+        startDate: moment({ year: 2016, month: 2 }).toDate(),
+        endDate: moment({ year: 2019, month: 5 }).toDate(),
       },
     ],
   },
@@ -150,27 +150,22 @@ export const EXPERIENCES: Experience[] = [
     roles: [
       {
         title: "BaySquared Consulting: Owner",
-        startDate: moment({ year: 2021, month: 11, day: 1 }).toDate(),
-      },
-      {
-        title: "Oasis: Mentor",
-        startDate: moment({ year: 2023, month: 0, day: 1 }).toDate(),
-        endDate: moment({ year: 2023, month: 3, day: 1 }).toDate(),
+        startDate: moment({ year: 2021, month: 11 }).toDate(),
       },
       {
         title: "Middlesex Beach: Webmaster + Tech Consultant",
-        startDate: moment({ year: 2017, month: 0, day: 1 }).toDate(),
-        endDate: moment({ year: 2021, month: 0, day: 1 }).toDate(),
+        startDate: moment({ year: 2017, month: 0 }).toDate(),
+        endDate: moment({ year: 2021, month: 0 }).toDate(),
       },
       {
         title: "SED Center: Classroom Assistant",
-        startDate: moment({ year: 2019, month: 9, day: 1 }).toDate(),
-        endDate: moment({ year: 2020, month: 3, day: 1 }).toDate(),
+        startDate: moment({ year: 2019, month: 9 }).toDate(),
+        endDate: moment({ year: 2020, month: 3 }).toDate(),
       },
       {
         title: "Castello Ragazzi: Webmaster + Comms Officer",
-        startDate: moment({ year: 2016, month: 0, day: 1 }).toDate(),
-        endDate: moment({ year: 2018, month: 0, day: 1 }).toDate(),
+        startDate: moment({ year: 2016, month: 0 }).toDate(),
+        endDate: moment({ year: 2018, month: 0 }).toDate(),
       },
     ],
   },

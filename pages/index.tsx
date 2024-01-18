@@ -111,15 +111,20 @@ export default function Home() {
                 >
                   Northeastern University
                 </a>{" "}
-                📓, a Digital Transformation and Technology Co-op at{" "}
+                📓 where he is a Curriculum Innovation Developer for its{" "}
                 <a
-                  href="https://www.chick-fil-a.com/"
+                  href="https://www.khoury.northeastern.edu/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Chick-fil-A
+                  Khoury College
                 </a>{" "}
-                🐓, and Co-President of{" "}
+                🎓.
+              </motion.p>
+
+              <motion.p variants={heroBlock}>
+                He also oversees 45 undergraduate and {"Master's"} students as
+                Co-President of{" "}
                 <a
                   href="https://tedxnortheasternu.com"
                   target="_blank"
@@ -127,35 +132,8 @@ export default function Home() {
                 >
                   TEDxNortheasternU
                 </a>{" "}
-                🎙️ where he oversees an organization of 41.
-              </motion.p>
-
-              <motion.p variants={heroBlock}>
-                At{" "}
-                <a
-                  href="https://www.khoury.northeastern.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Khoury
-                </a>{" "}
-                🎓, he recently designed + built interactive technical modules
-                for 525 students in CS1200 (First-Year Seminar) and established
-                grading processes for 50 TAs across 5,000 student submissions in
-                CS3500 (Object-Oriented Design).
-              </motion.p>
-
-              <motion.p variants={heroBlock}>
-                He has also overseen full-stack software development and product
-                management at{" "}
-                <a
-                  href="https://tadpoletutoring.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Tadpole
-                </a>{" "}
-                📚, mentored students and crafted web dev resources for{" "}
+                🎙️ and orchestrates an eight-week program helping 100+ students
+                bring their software ideas to life as Project Series Director of{" "}
                 <a
                   href="https://www.oasisneu.com"
                   target="_blank"
@@ -163,7 +141,27 @@ export default function Home() {
                 >
                   Oasis
                 </a>{" "}
-                🌴, and managed business-critical infrastructure at{" "}
+                🌴.
+              </motion.p>
+
+              <motion.p variants={heroBlock}>
+                Recently, Jay served as a Software Engineer at{" "}
+                <a
+                  href="https://www.chick-fil-a.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chick-fil-A
+                </a>{" "}
+                🐮, led software engineering at{" "}
+                <a
+                  href="https://tadpoletutoring.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tadpole
+                </a>{" "}
+                📚, and managed business-critical infrastructure for{" "}
                 <a
                   href="https://spcfinancial.com"
                   target="_blank"
