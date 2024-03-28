@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
-import ExperienceTitle from "../components/ExperienceTitle";
 import ExperienceBlock from "../components/ExperienceBlock";
+import ExperienceTitle from "../components/ExperienceTitle";
 
 import { EXPERIENCES, Experience } from "../data/experiences";
 
@@ -11,8 +11,8 @@ import photo from "../public/me.jpg";
 
 import bay2Logo from "../public/logos/bay2.svg";
 import cfaLogo from "../public/logos/cfa.svg";
-import oasisLogo from "../public/logos/oasis.svg";
 import kccsLogo from "../public/logos/kccs.svg";
+import oasisLogo from "../public/logos/oasis.svg";
 import spcLogo from "../public/logos/spc.svg";
 import tadpoleLogo from "../public/logos/tadpole.svg";
 import tedxLogo from "../public/logos/tedxnortheasternu.svg";
@@ -123,8 +123,7 @@ export default function Home() {
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                He also oversees 45 undergraduate and {"Master's"} students as
-                Co-President of{" "}
+                He also oversees a team of 52 as Co-President of{" "}
                 <a
                   href="https://tedxnortheasternu.com"
                   target="_blank"
