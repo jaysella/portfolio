@@ -53,24 +53,6 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
-    slug: "oasis",
-    company: "Oasis",
-    type: ExperienceType.COMMUNITY,
-    location: "Boston, MA",
-    locationType: LocationType.ON_SITE,
-    roles: [
-      {
-        title: "Project Series Director",
-        startDate: moment({ year: 2024, month: 0 }).toDate(),
-      },
-      {
-        title: "Mentor & Resource Author",
-        startDate: moment({ year: 2023, month: 0 }).toDate(),
-        endDate: moment({ year: 2023, month: 3 }).toDate(),
-      },
-    ],
-  },
-  {
     slug: "cfa",
     company: "Chick-fil-A",
     type: ExperienceType.PROFESSIONAL,
@@ -84,6 +66,38 @@ export const EXPERIENCES: Experience[] = [
     ],
   },
   {
+    slug: "generate",
+    company: "Generate",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Operations Director",
+        startDate: moment({ year: 2024, month: 3 }).toDate(),
+      },
+    ],
+  },
+  {
+    slug: "oasis",
+    company: "Oasis",
+    type: ExperienceType.COMMUNITY,
+    location: "Boston, MA",
+    locationType: LocationType.ON_SITE,
+    roles: [
+      {
+        title: "Project Series Director",
+        startDate: moment({ year: 2024, month: 0 }).toDate(),
+        endDate: moment({ year: 2024, month: 3 }).toDate(),
+      },
+      {
+        title: "Mentor & Resource Author",
+        startDate: moment({ year: 2023, month: 0 }).toDate(),
+        endDate: moment({ year: 2023, month: 3 }).toDate(),
+      },
+    ],
+  },
+  {
     slug: "tedxnu",
     company: "TEDxNortheasternU",
     type: ExperienceType.COMMUNITY,
@@ -93,6 +107,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Co-President",
         startDate: moment({ year: 2023, month: 4 }).toDate(),
+        endDate: moment({ year: 2024, month: 3 }).toDate(),
       },
       {
         title: "Director of Operations",

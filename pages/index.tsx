@@ -29,7 +29,7 @@ export default function Home() {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.25,
+        staggerChildren: 0.22,
       },
     },
     hidden: {
@@ -102,57 +102,38 @@ export default function Home() {
               </Intro>
 
               <motion.p variants={heroBlock}>
-                Jay is a third-year Computer Science + Business Administration
-                student at{" "}
-                <a
-                  href="https://www.northeastern.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                Jay is a rising fourth-year Computer Science and Business
+                Administration student at{" "}
+                <ExtLink href="https://www.northeastern.edu/">
                   Northeastern University
-                </a>{" "}
-                📓 where he is a Curriculum Innovation Developer for its{" "}
-                <a
-                  href="https://www.khoury.northeastern.edu/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                </ExtLink>{" "}
+                🎓 where he is a Curriculum Innovation Developer for its{" "}
+                <ExtLink href="https://www.khoury.northeastern.edu/">
                   Khoury College
-                </a>{" "}
-                🎓.
+                </ExtLink>{" "}
+                📒.
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                He also oversees a team of 52 as Co-President of{" "}
-                <a
-                  href="https://tedxnortheasternu.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TEDxNortheasternU
-                </a>{" "}
-                🎙️ and orchestrates an eight-week program helping 100+ students
-                bring their software ideas to life as Project Series Director of{" "}
-                <a
-                  href="https://www.oasisneu.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Oasis
-                </a>{" "}
-                🌴.
-              </motion.p>
-
-              <motion.p variants={heroBlock}>
-                Recently, Jay served as a Software Engineer at{" "}
-                <a
-                  href="https://www.chick-fil-a.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                He is also on his second co-op rotation as a Software Engineer
+                at{" "}
+                <ExtLink href="https://www.chick-fil-a.com/">
                   Chick-fil-A
-                </a>{" "}
-                🐮, led software engineering at{" "}
+                </ExtLink>{" "}
+                🐮 and serves as Operations Director for Northeastern’s product
+                development studio,{" "}
+                <ExtLink href="https://generatenu.com">Generate</ExtLink> 🧰.
+              </motion.p>
+
+              <motion.p variants={heroBlock}>
+                Previously, he oversaw a team of 52 as Co-President of{" "}
+                <ExtLink href="https://tedxnortheasternu.com">
+                  TEDxNortheasternU
+                </ExtLink>{" "}
+                🎙️, orchestrated a 100-student software project accelarator as
+                Project Series Director of{" "}
+                <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink> 🌴, led
+                software engineering at{" "}
                 <a
                   href="https://tadpoletutoring.org"
                   target="_blank"
@@ -161,13 +142,7 @@ export default function Home() {
                   Tadpole
                 </a>{" "}
                 📚, and managed business-critical infrastructure for{" "}
-                <a
-                  href="https://spcfinancial.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  SPC Financial
-                </a>{" "}
+                <ExtLink href="https://spcfinancial.com">SPC Financial</ExtLink>{" "}
                 💼.
               </motion.p>
 
@@ -239,6 +214,18 @@ export default function Home() {
     </>
   );
 }
+
+const ExtLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
+  <a href={href} target="_blank" rel="noopener noreferrer">
+    {children}
+  </a>
+);
 
 const HeroSection = styled("section", {
   marginX: "auto",
