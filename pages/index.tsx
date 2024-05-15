@@ -130,7 +130,7 @@ export default function Home() {
                 <ExtLink href="https://tedxnortheasternu.com">
                   TEDxNortheasternU
                 </ExtLink>{" "}
-                🎙️, orchestrated a 100-student software project accelarator as
+                🎙️, orchestrated a 100-student software project accelerator as
                 Project Series Director of{" "}
                 <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink> 🌴, led
                 software engineering at{" "}
