@@ -146,7 +146,7 @@ export default function Home() {
 
               <motion.p variants={heroBlock}>
                 Recently, Jay enabled real-time Kubernetes cost monitoring and
-                optimization during his second co-op rotation at{" "}
+                optimization during his second co-op at{" "}
                 <ExtLink href="https://www.chick-fil-a.com/">
                   Chick-fil-A
                 </ExtLink>{" "}
@@ -174,29 +174,7 @@ export default function Home() {
               </motion.p>
 
               <motion.p>
-                He has also organized interdisciplinary events at{" "}
-                <ExtLink href="https://tedxnortheasternu.com">
-                  TEDxNortheasternU
-                </ExtLink>{" "}
-                <PodcastIcon
-                  style={{
-                    width: "1.2rem",
-                    height: "1.2rem",
-                    color: "#98A8B7",
-                    verticalAlign: "text-top",
-                  }}
-                />
-                , orchestrated a 100-student software project accelerator at{" "}
-                <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink>{" "}
-                <TreePalmIcon
-                  style={{
-                    width: "1.2rem",
-                    height: "1.2rem",
-                    color: "#98A8B7",
-                    verticalAlign: "text-top",
-                  }}
-                />
-                , led software engineering at{" "}
+                He has also led software engineering at{" "}
                 <a
                   href="https://tadpoletutoring.org"
                   target="_blank"
@@ -212,9 +190,31 @@ export default function Home() {
                     verticalAlign: "text-top",
                   }}
                 />
-                , and managed business-critical infrastructure for{" "}
+                , managed business-critical tools for{" "}
                 <ExtLink href="https://spcfinancial.com">SPC Financial</ExtLink>{" "}
                 <BriefcaseIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                , organized interdisciplinary events at{" "}
+                <ExtLink href="https://tedxnortheasternu.com">
+                  TEDxNortheasternU
+                </ExtLink>{" "}
+                <PodcastIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                , and oversaw a 100-student software project accelerator at{" "}
+                <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink>{" "}
+                <TreePalmIcon
                   style={{
                     width: "1.2rem",
                     height: "1.2rem",
