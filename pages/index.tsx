@@ -2,6 +2,21 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
+import {
+  BriefcaseIcon,
+  ChefHatIcon,
+  CitrusIcon,
+  LightbulbIcon,
+  MessageCircleCodeIcon,
+  NotebookIcon,
+  NotebookPenIcon,
+  PodcastIcon,
+  SaladIcon,
+  TreePalmIcon,
+  UniversityIcon,
+  UtensilsIcon,
+} from "lucide-react";
+
 import ExperienceBlock from "../components/ExperienceBlock";
 import ExperienceTitle from "../components/ExperienceTitle";
 
@@ -107,43 +122,107 @@ export default function Home() {
                 <ExtLink href="https://www.northeastern.edu/">
                   Northeastern University
                 </ExtLink>{" "}
-                🎓 where he serves as Operations Director for its product
+                <UniversityIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />{" "}
+                where he serves as Operations Director for its premier product
                 development studio,{" "}
-                <ExtLink href="https://generatenu.com">Generate</ExtLink> 🧰.
+                <ExtLink href="https://generatenu.com">Generate</ExtLink>{" "}
+                <LightbulbIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                .
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                Recently, he served as a Cloud Platform Engineer during his
-                second co-op rotation at{" "}
+                Recently, Jay enabled real-time Kubernetes cost monitoring and
+                optimization during his second co-op rotation at{" "}
                 <ExtLink href="https://www.chick-fil-a.com/">
                   Chick-fil-A
                 </ExtLink>{" "}
-                🐮 and as a Curriculum Innovation Developer for{" "}
+                <ChefHatIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />{" "}
+                and authored on-demand learning content for{" "}
                 <ExtLink href="https://www.khoury.northeastern.edu/">
                   Khoury College
                 </ExtLink>{" "}
-                📒.
+                <MessageCircleCodeIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                .
               </motion.p>
 
-              <motion.p variants={heroBlock}>
-                Previously, he oversaw a team of 52 as Co-President of{" "}
+              <motion.p>
+                He has also organized interdisciplinary events at{" "}
                 <ExtLink href="https://tedxnortheasternu.com">
                   TEDxNortheasternU
                 </ExtLink>{" "}
-                🎙️, orchestrated a 100-student software project accelerator as
-                Project Series Director of{" "}
-                <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink> 🌴, led
-                software engineering at{" "}
+                <PodcastIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                , orchestrated a 100-student software project accelerator at{" "}
+                <ExtLink href="https://www.oasisneu.com">Oasis</ExtLink>{" "}
+                <TreePalmIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                , led software engineering at{" "}
                 <a
                   href="https://tadpoletutoring.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Tadpole
+                  Tadpole Tutoring
                 </a>{" "}
-                📚, and managed business-critical infrastructure for{" "}
+                <NotebookPenIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                , and managed business-critical infrastructure for{" "}
                 <ExtLink href="https://spcfinancial.com">SPC Financial</ExtLink>{" "}
-                💼.
+                <BriefcaseIcon
+                  style={{
+                    width: "1.2rem",
+                    height: "1.2rem",
+                    color: "#98A8B7",
+                    verticalAlign: "text-top",
+                  }}
+                />
+                .
               </motion.p>
 
               <motion.p variants={heroBlock}>
