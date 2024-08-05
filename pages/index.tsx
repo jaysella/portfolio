@@ -173,7 +173,7 @@ export default function Home() {
                 .
               </motion.p>
 
-              <motion.p>
+              <motion.p variants={heroBlock}>
                 He has also led software engineering at{" "}
                 <a
                   href="https://tadpoletutoring.org"
