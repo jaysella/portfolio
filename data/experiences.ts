@@ -29,6 +29,25 @@ export type Role = {
 
 export const EXPERIENCES: Experience[] = [
   {
+    slug: "cfa",
+    company: "Chick-fil-A",
+    type: ExperienceType.PROFESSIONAL,
+    location: "Atlanta, GA",
+    locationType: LocationType.HYBRID,
+    roles: [
+      {
+        title: "Cloud Platform Engineer - Kube Platform",
+        startDate: moment({ year: 2024, month: 4 }).toDate(),
+        endDate: moment({ year: 2024, month: 7 }).toDate(),
+      },
+      {
+        title: "Software Engineer - Effectiveness & Operations",
+        startDate: moment({ year: 2023, month: 7 }).toDate(),
+        endDate: moment({ year: 2023, month: 11 }).toDate(),
+      },
+    ],
+  },
+  {
     slug: "khoury",
     company: "Khoury College of Computer Sciences",
     type: ExperienceType.PROFESSIONAL,
@@ -38,6 +57,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Curriculum Innovation Developer",
         startDate: moment({ year: 2024, month: 0 }).toDate(),
+        endDate: moment({ year: 2024, month: 4 }).toDate(),
       },
       {
         title:
@@ -46,22 +66,9 @@ export const EXPERIENCES: Experience[] = [
         endDate: moment({ year: 2023, month: 11 }).toDate(),
       },
       {
-        title: "Teaching Assistant",
+        title: "Teaching Assistant - CS 3500, 2510, 2500, 1200",
         startDate: moment({ year: 2022, month: 8 }).toDate(),
         endDate: moment({ year: 2023, month: 5 }).toDate(),
-      },
-    ],
-  },
-  {
-    slug: "cfa",
-    company: "Chick-fil-A",
-    type: ExperienceType.PROFESSIONAL,
-    location: "Atlanta, GA",
-    locationType: LocationType.HYBRID,
-    roles: [
-      {
-        title: "Software Engineer (Co-Op)",
-        startDate: moment({ year: 2023, month: 7 }).toDate(),
       },
     ],
   },

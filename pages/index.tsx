@@ -102,27 +102,27 @@ export default function Home() {
               </Intro>
 
               <motion.p variants={heroBlock}>
-                Jay is a rising fourth-year Computer Science and Business
+                Jay is a fourth-year Computer Science and Business
                 Administration student at{" "}
                 <ExtLink href="https://www.northeastern.edu/">
                   Northeastern University
                 </ExtLink>{" "}
-                🎓 where he is a Curriculum Innovation Developer for its{" "}
+                🎓 where he serves as Operations Director for its product
+                development studio,{" "}
+                <ExtLink href="https://generatenu.com">Generate</ExtLink> 🧰.
+              </motion.p>
+
+              <motion.p variants={heroBlock}>
+                Recently, he served as a Cloud Platform Engineer during his
+                second co-op rotation at{" "}
+                <ExtLink href="https://www.chick-fil-a.com/">
+                  Chick-fil-A
+                </ExtLink>{" "}
+                🐮 and as a Curriculum Innovation Developer for{" "}
                 <ExtLink href="https://www.khoury.northeastern.edu/">
                   Khoury College
                 </ExtLink>{" "}
                 📒.
-              </motion.p>
-
-              <motion.p variants={heroBlock}>
-                He is also on his second co-op rotation as a Software Engineer
-                at{" "}
-                <ExtLink href="https://www.chick-fil-a.com/">
-                  Chick-fil-A
-                </ExtLink>{" "}
-                🐮 and serves as Operations Director for Northeastern’s product
-                development studio,{" "}
-                <ExtLink href="https://generatenu.com">Generate</ExtLink> 🧰.
               </motion.p>
 
               <motion.p variants={heroBlock}>
