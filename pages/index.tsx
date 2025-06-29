@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ import {
 import ExperienceBlock from "../components/ExperienceBlock";
 import ExperienceTitle from "../components/ExperienceTitle";
 
-import { EXPERIENCES, Experience } from "../data/experiences";
+import { Experience, EXPERIENCES } from "../data/experiences";
 
 import photo from "../public/me.jpg";
 
@@ -35,7 +35,7 @@ import { styled } from "../stitches.config";
 export default function Home() {
   const LOGO_ROW_HEIGHT = 35;
 
-  const heroBlocks = {
+  const heroBlocks: Variants = {
     visible: {
       opacity: 1,
       transition: {
@@ -51,17 +51,17 @@ export default function Home() {
     },
   };
 
-  const heroBlock = {
+  const heroBlock: Variants = {
     visible: { opacity: 1, y: 0 },
     hidden: { opacity: 0, y: 25 },
   };
 
-  const logos = {
+  const logos: Variants = {
     visible: { opacity: 1, y: 0, transition: { delay: 2.5 } },
     hidden: { opacity: 0, y: 25 },
   };
 
-  const sectionTitle = {
+  const sectionTitle: Variants = {
     hidden: { pathLength: 0, opacity: 0 },
     visible: (i) => {
       const delay = 0.25 + i * 0.25;
