@@ -1,4 +1,4 @@
-import { Variants, motion } from "framer-motion";
+import { Variants, motion } from "motion/react";
 
 export default function ExperienceTitle({ variants }: { variants: Variants }) {
   return (
