@@ -33,7 +33,7 @@ export default function ExperienceBlock({
                 ) : null}
               </div>
               <RoleDates>
-                {moment(r.startDate).format("MMM 'YY")} —{" "}
+                {moment(r.startDate).format("MMM 'YY")} &ndash;{" "}
                 {r.endDate ? moment(r.endDate).format("MMM 'YY") : "Present"}
               </RoleDates>
             </li>

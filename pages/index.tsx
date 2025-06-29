@@ -5,16 +5,12 @@ import Image from "next/image";
 import {
   BriefcaseIcon,
   ChefHatIcon,
-  CitrusIcon,
   LightbulbIcon,
   MessageCircleCodeIcon,
-  NotebookIcon,
   NotebookPenIcon,
   PodcastIcon,
-  SaladIcon,
   TreePalmIcon,
   UniversityIcon,
-  UtensilsIcon,
 } from "lucide-react";
 
 import ExperienceBlock from "../components/ExperienceBlock";
@@ -117,8 +113,7 @@ export default function Home() {
               </Intro>
 
               <motion.p variants={heroBlock}>
-                Jay is a fourth-year Computer Science and Business
-                Administration student at{" "}
+                Jay recently graduated from{" "}
                 <ExtLink href="https://www.northeastern.edu/">
                   Northeastern University
                 </ExtLink>{" "}
@@ -130,7 +125,8 @@ export default function Home() {
                     verticalAlign: "text-top",
                   }}
                 />{" "}
-                where he serves as Operations Director for its premier product
+                with a degree in Computer Science and Business Administration.
+                There he served as Operations Director for its premier product
                 development studio,{" "}
                 <ExtLink href="https://generatenu.com">Generate</ExtLink>{" "}
                 <LightbulbIcon
@@ -145,8 +141,8 @@ export default function Home() {
               </motion.p>
 
               <motion.p variants={heroBlock}>
-                Recently, Jay enabled real-time Kubernetes cost monitoring and
-                optimization during his second co-op at{" "}
+                Previously, Jay enabled real-time Kubernetes cost monitoring and
+                optimization at{" "}
                 <ExtLink href="https://www.chick-fil-a.com/">
                   Chick-fil-A
                 </ExtLink>{" "}

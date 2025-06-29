@@ -82,6 +82,7 @@ export const EXPERIENCES: Experience[] = [
       {
         title: "Operations Director",
         startDate: moment({ year: 2024, month: 3 }).toDate(),
+        endDate: moment({ year: 2025, month: 3 }).toDate(),
       },
     ],
   },
