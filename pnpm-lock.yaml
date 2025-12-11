@@ -4,9 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  '@types/react': 19.1.8
-
 importers:
 
   .:
@@ -40,8 +37,8 @@ importers:
         specifier: ^24.0.7
         version: 24.0.7
       '@types/react':
-        specifier: 19.1.8
-        version: 19.1.8
+        specifier: 19.2.7
+        version: 19.2.7
       eslint:
         specifier: ^9.39.1
         version: 9.39.1
@@ -451,8 +448,8 @@ packages:
   '@types/node@24.0.7':
     resolution: {integrity: sha512-YIEUUr4yf8q8oQoXPpSlnvKNVKDQlPMWrmOcgzoduo7kvA2UF0/BwJ/eMKFTiTtkNL17I0M6Xe2tvwFU7be6iw==}
 
-  '@types/react@19.1.8':
-    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@typescript-eslint/eslint-plugin@8.49.0':
     resolution: {integrity: sha512-JXij0vzIaTtCwu6SxTh8qBc66kmf1xs7pI4UOiMDFVct6q86G0Zs7KRcEoJgY3Cav3x5Tq0MF5jwgpgLqgKG3A==}
@@ -2176,7 +2173,7 @@ snapshots:
     dependencies:
       undici-types: 7.8.0
 
-  '@types/react@19.1.8':
+  '@types/react@19.2.7':
     dependencies:
       csstype: 3.2.3
 
